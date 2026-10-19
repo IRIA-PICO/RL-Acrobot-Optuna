@@ -218,3 +218,9 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Acrobot generated results
+results/optuna/*
+!results/optuna/.gitkeep
+results/tensorboard/*
+!results/tensorboard/.gitkeep
