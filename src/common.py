@@ -22,8 +22,8 @@ OBS_LOW = np.array([
 OBS_HIGH = -OBS_LOW
 
 
-def create_env():
-    env = gym.make(ENV_NAME)
+def create_env(render_mode=None):
+    env = gym.make(ENV_NAME, render_mode=render_mode)
 
     env = DiscretizedActionWrapper(
         env,
